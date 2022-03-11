@@ -33,4 +33,6 @@ RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod
   && apt-get -y install \
   powershell
 
+USER vscode
+
 CMD ["/bin/zsh"]
