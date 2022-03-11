@@ -17,3 +17,5 @@ plugins=(
 
 source $HOME/.profile
 source $ZSH/oh-my-zsh.sh
+
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
