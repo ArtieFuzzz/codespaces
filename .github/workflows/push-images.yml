@@ -7,7 +7,7 @@ on:
 
 jobs:
   push:
-    name: Build and Push Image to Ghcr.io
+    name: Build and Push Image to Docker Hub
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
