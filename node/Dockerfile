@@ -20,7 +20,7 @@ RUN add-apt-repository "deb http://ftp.us.debian.org/debian buster main contrib 
   tree \ 
   wget
 
-RUN npm i-g
+RUN npm i -g typescript node-gyp rimraf prettier pm2
 
 RUN git clone https://github.com/romkatv/powerlevel10k.git /home/vscode/.oh-my-zsh/custom/themes/powerlevel10k --depth=1 \
   && git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting --depth 1 \
