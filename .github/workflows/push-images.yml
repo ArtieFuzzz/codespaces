@@ -1,0 +1,28 @@
+name: "Push Docker Images"
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  push:
+    name: Build and Push Image to Ghcr.io
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v1
+      - name: Login to Docker Container Registry
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS }}
+      - name: Build and push Rust Codespace Docker image
+        uses: docker/build-push-action@v2.9.0
+        with:
+          push: true
+          context: ./rust
+          tags: |
+            artiefuzzz/codespace:rust
