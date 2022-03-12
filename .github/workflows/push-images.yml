@@ -46,7 +46,6 @@ jobs:
           context: ./node
           tags: |
             artiefuzzz/codespace:typescript
-            artiefuzzz/codespace:ts
             artiefuzzz/codespace:node
   Deno:
     name: Build and Push
@@ -68,4 +67,3 @@ jobs:
           context: ./deno-buster
           tags: |
             artiefuzzz/codespace:deno
-            artiefuzzz/codespace:deno-buster
