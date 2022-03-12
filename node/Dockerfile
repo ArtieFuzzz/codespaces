@@ -33,7 +33,7 @@ RUN git clone https://github.com/romkatv/powerlevel10k.git /home/node/.oh-my-zsh
   && curl -sLo /home/node/.p10k.zsh https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.p10k.zsh \
   && curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/node/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh
 
-RUN curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh | bash
+RUN bash -c "$(curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh)"
 
 RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb \ 
   && dpkg -i packages-microsoft-prod.deb \
