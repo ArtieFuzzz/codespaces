@@ -35,3 +35,11 @@ jobs:
             artiefuzzz/codespace:typescript
             artiefuzzz/codespace:ts
             artiefuzzz/codespace:node
+      - name: Build and push TypeScript Codespace Docker image
+        uses: docker/build-push-action@v2.9.0
+        with:
+          push: true
+          context: ./deno-buster
+          tags: |
+            artiefuzzz/codespace:deno
+            artiefuzzz/codespace:deno-buster
