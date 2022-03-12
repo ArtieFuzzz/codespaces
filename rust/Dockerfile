@@ -30,9 +30,9 @@ RUN git clone https://github.com/romkatv/powerlevel10k.git /home/vscode/.oh-my-z
   && curl -sLo /home/vscode/.zshrc https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.zshrc \
   && curl -sLo /home/vscode/.profile https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.profile \
   && curl -sLo /home/vscode/.p10k.zsh https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.p10k.zsh\
-  && curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh \
-  && mkdir /home/vscode/.fonts \
-  && apt-get install fonts-jetbrains-mono -y
+  && curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh
+
+RUN curl -fsSL https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/install_manual.sh | bash
 
 RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb \ 
   && dpkg -i packages-microsoft-prod.deb \
