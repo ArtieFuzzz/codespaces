@@ -20,7 +20,7 @@ RUN add-apt-repository "deb http://ftp.us.debian.org/debian buster main contrib 
   tree \
   wget \
   unzip \
-  fc-cache
+  fontconfig
 
 RUN npm i -g typescript node-gyp rimraf prettier pm2
 
