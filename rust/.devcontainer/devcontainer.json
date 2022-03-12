@@ -1,0 +1,27 @@
+{
+  "name": "Rust - Devcontainer",
+  "image": "artiefuzzz/codespace:rust",
+  "extensions": [
+    "aaron-bond.better-comments",
+    "matklad.rust-analyzer",
+    "editorconfig.editorconfig",
+    "eamodio.gitlens",
+    "quicktype.quicktype",
+    "serayuzgur.crates",
+    "bungcip.better-toml"
+  ],
+  "settings": {
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "files.eol": "auto",
+    "editor.formatOnSave": true,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": true,
+    "terminal.integrated.cursorBlinking": true,
+    "window.titleSeparator": " | ",
+    "window.title": "${dirty}${activeEditorShort}${separator}${activeFolderShort}",
+    "terminal.integrated.tabs.title": "${process}${separator}${workspaceFolder}",
+    "editor.tabSize": 2,
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": "active"
+  }
+}
