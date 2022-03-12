@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/rust:buster
+FROM mcr.microsoft.com/vscode/devcontainers/rust:bullseye
 
 RUN apt-get update \
   && apt-get -y install \
@@ -32,8 +32,7 @@ RUN git clone https://github.com/romkatv/powerlevel10k.git /home/vscode/.oh-my-z
   && curl -sLo /home/vscode/.p10k.zsh https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.p10k.zsh\
   && curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh \
   && mkdir /home/vscode/.fonts \
-  && wget https://download.jetbrains.com/fonts/JetBrainsMono-2.242.zip -O /home/vscode/.fonts/JetBrains\ Mono.zip \
-  && unzip /home/vscode/.fonts/JetBrains\ Mono.zip -d /usr/share/fonts/
+  && apt-get install fonts-jetbrains-mono -y
 
 RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb \ 
   && dpkg -i packages-microsoft-prod.deb \
