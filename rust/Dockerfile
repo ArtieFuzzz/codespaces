@@ -28,9 +28,9 @@ RUN git clone https://github.com/romkatv/powerlevel10k.git /home/vscode/.oh-my-z
   # Zsh config, etc
   && curl -sLo /home/vscode/.zshrc https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.zshrc \
   && curl -sLo /home/vscode/.profile https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.profile \
-  && curl -sLo /home/vscode/.p10k.zsh https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.p10k.zsh
-
-RUN curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh \
+  && curl -sLo /home/vscode/.p10k.zsh https://raw.githubusercontent.com/ArtieFuzzz/devcontainers/main/.p10k.zsh\
+  && curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh \
+  && mkdir /home/vscode/.fonts \
   && wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf -O /home/vscode/.fonts/MesloLGS\ NF\ Regular.ttf \
   && wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Bold.ttf -O /home/vscode/.fonts/MesloLGS\ NF\ Bold.ttf \
   && wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Italic.ttf -O /home/vscode/.fonts/MesloLGS\ NF\ Italic.ttf \
