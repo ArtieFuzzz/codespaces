@@ -7,7 +7,7 @@ on:
 
 jobs:
   Rust:
-    name: Build and Push
+    name: Build and Push Rust codespace image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -27,7 +27,7 @@ jobs:
           tags: |
             artiefuzzz/codespace:rust
   TypeScript:
-    name: Build and Push
+    name: Build and Push TypeScript codespace image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -48,7 +48,7 @@ jobs:
             artiefuzzz/codespace:typescript
             artiefuzzz/codespace:node
   Deno:
-    name: Build and Push
+    name: Build and Push Deno codespace image
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
