@@ -33,8 +33,9 @@ RUN git clone https://github.com/romkatv/powerlevel10k.git /home/vscode/.oh-my-z
   && curl -sL https://raw.githubusercontent.com/Favna/dotfiles/main/extra/line-highlighters-addition.zsh >> /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/line/line-highlighter.zsh \
   && mkdir /home/vscode/.fonts \
   && wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/JetBrainsMono.zip -O /home/vscode/.fonts/JetBrains\ Mono.zip \
+  && unzip /home/vscode/.fonts/JetBrains\ Mono.zip
 
-  RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb \ 
+RUN wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb \ 
   && dpkg -i packages-microsoft-prod.deb \
   && apt-get update \
   && apt-get -y install \
