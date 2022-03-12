@@ -17,8 +17,9 @@ RUN add-apt-repository "deb http://ftp.us.debian.org/debian buster main contrib 
   htop \
   nano \
   neofetch \
-  tree \ 
-  curl
+  tree \
+  wget \
+  unzip
 
 RUN npm i -g typescript node-gyp rimraf prettier pm2
 
