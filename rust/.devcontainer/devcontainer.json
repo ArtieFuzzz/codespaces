@@ -22,6 +22,8 @@
     "terminal.integrated.tabs.title": "${process}${separator}${workspaceFolder}",
     "editor.tabSize": 2,
     "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active"
+    "editor.guides.bracketPairs": "active",
+    "terminal.integrated.fontFamily": "MesloLGS NF",
+    "javascript.updateImportsOnFileMove.enabled": "always"
   }
 }
