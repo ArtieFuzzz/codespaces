@@ -14,11 +14,6 @@
     "terminal.integrated.defaultProfile.linux": "zsh",
     "files.eol": "auto",
     "editor.formatOnSave": true,
-    "javascript.format.semicolons": "remove",
-    "typescript.format.semicolons": "remove",
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    },
     "editor.cursorBlinking": "phase",
     "editor.cursorSmoothCaretAnimation": true,
     "terminal.integrated.cursorBlinking": true,
@@ -27,6 +22,8 @@
     "terminal.integrated.tabs.title": "${process}${separator}${workspaceFolder}",
     "editor.tabSize": 2,
     "editor.bracketPairColorization.enabled": true,
-    "editor.guides.bracketPairs": "active"
+    "editor.guides.bracketPairs": "active",
+    "editor.integrated.fontFamily": "JetBrains Mono",
+    "javascript.updateImportsOnFileMove.enabled": "always"
   }
 }

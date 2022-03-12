@@ -6,7 +6,7 @@
     "matklad.rust-analyzer",
     "editorconfig.editorconfig",
     "eamodio.gitlens",
-     "quicktype.quicktype",
+    "quicktype.quicktype",
     "serayuzgur.crates",
     "bungcip.better-toml"
   ],
@@ -24,8 +24,6 @@
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": "active",
     "editor.integrated.fontFamily": "JetBrains Mono",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.fontWeight": "300",
-    "editor.fontSize": 15
+    "javascript.updateImportsOnFileMove.enabled": "always"
   }
 }
