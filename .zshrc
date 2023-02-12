@@ -1,9 +1,7 @@
 # Based on Favware's Codespace
 # Licensed under MIT
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
+eval "$(starship init zsh)"
 
 export TERM="xterm-256color"
 export ZSH="$HOME/.oh-my-zsh"
