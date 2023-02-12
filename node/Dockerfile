@@ -23,7 +23,7 @@ RUN add-apt-repository "deb http://ftp.us.debian.org/debian buster main contrib 
   fontconfig
 
 # Install Starpship
-RUN curl -sS https://starship.rs/install.sh | sh
+RUN curl -sS https://starship.rs/install.sh --yes | sh
 
 RUN npm i -g typescript node-gyp rimraf prettier pm2
 

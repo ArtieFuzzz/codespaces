@@ -23,7 +23,7 @@ RUN add-apt-repository "deb http://ftp.us.debian.org/debian buster main contrib 
   fontconfig
 
   # Install Starpship
-RUN curl -sS https://starship.rs/install.sh | sh
+RUN curl -sS https://starship.rs/install.sh --yes | sh
 
 RUN git clone https://github.com/zsh-users/zsh-syntax-highlighting.git /home/vscode/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting --depth 1 \
   # Download zsh-autosuggestions
